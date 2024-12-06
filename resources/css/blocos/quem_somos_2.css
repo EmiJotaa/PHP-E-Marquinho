@@ -1,0 +1,81 @@
+.quem_somos_2
+{
+	width: 100%;
+	display: block;
+	padding: 40px 0 60px 0;
+	background-color: #292929;
+}
+.quem_somos_2 .conteudo
+{
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+.quem_somos_2 .conteudo .texto
+{
+	width: 100%;
+	display: inline-block;
+}
+.quem_somos_2 .conteudo .texto .descricao
+{
+	margin-bottom: 0px;
+}
+.quem_somos_2 .conteudo .itens
+{
+	width: 100%;
+	display: inline-block;
+	margin-top: 50px;
+}
+.quem_somos_2 .conteudo .itens .item
+{
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+.quem_somos_2 .conteudo .itens .item:last-child
+{
+	margin-bottom: 0px;
+}
+.quem_somos_2 .conteudo .itens .item .img
+{
+	width: 15%;
+	display: inline-block;
+}
+.quem_somos_2 .conteudo .itens .item .img img
+{
+	width: 100%;
+	display: inline-block;
+}
+.quem_somos_2 .conteudo .itens .item .info
+{
+	width: 81%;
+	display: inline-block;
+}
+.quem_somos_2 .conteudo .itens .item .info h3
+{
+	margin-bottom: 15px;
+	font-family: var(--font-family-bold);
+	font-size: 24px;
+}
+@media only screen and (min-width:1160px)
+{
+	.quem_somos_2
+	{
+	padding: 40px 0 70px 0;
+	}
+	.quem_somos_2 .conteudo .texto
+	{
+		width: 58%;
+	}
+	.quem_somos_2 .conteudo .itens
+	{
+		width: 38%;
+		margin-top: 0px;
+	}
+
+}

@@ -1,0 +1,72 @@
+.fale-conosco
+{
+	width: 100%;
+	display: block;
+	padding-top: 50px;
+}
+.fale-conosco .conteudo
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.fale-conosco .conteudo .form,
+.fale-conosco .conteudo .contatos,
+.fale-conosco .conteudo	.mapa
+{
+	width: 100%;
+	display: block;
+}
+.fale-conosco .conteudo .mapa
+{
+	margin-top: 40px;
+}
+.fale-conosco .conteudo .mapa iframe
+{
+	width: 100%;
+	display: block;
+	height: 470px;
+	padding-top: 30px;
+}
+.fale-conosco .conteudo .form
+{
+	padding: 25px 25px 0px 25px;
+	background-color: #292929;
+}
+.fale-conosco .conteudo .form form
+{
+	display: flex;
+}
+@media only screen and (min-width: 768px)
+{
+	.fale-conosco .conteudo .form form .campo.nome,
+	.fale-conosco .conteudo .form form .campo.telefone,
+	.fale-conosco .conteudo .form form .campo.email,
+	.fale-conosco .conteudo .form form .campo.assunto
+	{
+		width: 49%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:1160px)
+{
+	.fale-conosco
+	{
+		padding: 40px 0;
+	}
+}

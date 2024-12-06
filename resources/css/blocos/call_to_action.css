@@ -1,0 +1,42 @@
+.call_to_action
+{
+	width: 100%;
+	padding: 80px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+.call_to_action .conteudo
+{
+	width: 100%;
+	display: block;
+}
+.call_to_action .conteudo h1
+{
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+	font-family: var(--font-family-semibold);
+	margin-bottom: 60px;
+}
+.call_to_action video
+{
+	position: absolute;
+	z-index: -1;
+	width: auto;
+	min-width: 100%;
+	height: auto;
+	min-height: 100%;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+}
+@media only screen and (min-width: 1024px)
+{
+	.call_to_action .conteudo h1
+	{
+		font-size: 36px;
+	}	
+}

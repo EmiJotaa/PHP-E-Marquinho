@@ -1,0 +1,99 @@
+.galeria_fotos
+{
+	width: 100%;
+	display: block;
+	padding: 80px 0px;
+	background-color: #292929;
+}
+.galeria_fotos .container
+{
+	max-width: 1490px;
+}
+.galeria_fotos .conteudo .texto .descicao
+{
+	max-width: 690px;
+	display: block;
+	margin: 0 auto 25px;
+}
+.galeria_fotos .conteudo .itens
+{
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.galeria_fotos .conteudo .itens .item
+{
+	width: 100%;
+	display: inline-block;
+	padding: 20px;
+}
+.galeria_fotos .conteudo .itens .item a
+{
+	width: 100%;
+	display: block;
+}
+.galeria_fotos .conteudo .itens .item a .img
+{
+	padding: 30px;
+}
+.galeria_fotos .conteudo .itens .item a .img,
+.galeria_fotos .conteudo .itens .item a .img img
+{
+	width: 100%;
+	display: block;
+	border-radius: 8%;
+	position: relative;
+	transition: var(--transition-time);
+}
+.galeria_fotos .conteudo .itens .item a .img img:hover
+{
+	transform: scale(1.1);
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(128,211,255,1);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(128,211,255,1);
+	box-shadow: 0px 0px 15px 0px rgba(128,211,255,1);
+	visibility: visible;
+	opacity: 1;
+}
+@media only screen and (min-width: 768px)
+{
+	.galeria_fotos:not(.listagem) .conteudo .itens .item
+	{
+		padding: 0px 40px;
+	}
+	.galeria_fotos.listagem .conteudo .itens .item
+	{
+		width: calc(50% - 35px);
+		margin-right: 70px;
+	}
+	.galeria_fotos.listagem .conteudo .itens .item:nth-child(2n+2)
+	{
+		margin-right: 0px;
+	}
+	.galeria_fotos .conteudo .itens .item a .img
+	{
+	padding: 0px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	}
+	.galeria_fotos.listagem .conteudo .itens .item
+	{
+		margin-bottom: 35px;
+	}
+}
+@media only screen and (min-width:1160px)
+{
+	.galeria_fotos.listagem .conteudo .itens .item
+	{
+		width: calc(33.3333333% - 46.666667px);
+	}
+	.galeria_fotos.listagem .conteudo .itens .item:nth-child(2n+2)
+	{
+		margin-right: 70px;
+	}
+	.galeria_fotos.listagem .conteudo .itens .item:nth-child(3n+3)
+	{
+		margin-right: 0px;
+	}
+}

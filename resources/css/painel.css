@@ -1,0 +1,7 @@
+@import 'fontscss/fontawesome.min.css';
+@import 'fontscss/montserrat.css';
+@import 'reset/reset.css';
+
+@import 'admin/login.css';
+@import 'admin/dashboard.css';
+

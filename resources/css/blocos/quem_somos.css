@@ -1,0 +1,121 @@
+.quem_somos
+{
+	padding: 40px 0 70px 0;
+	display: block;
+	background-color: #292929;
+}
+.quem_somos .conteudo
+{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.quem_somos .conteudo .texto
+{
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 45px;
+}
+.quem_somos .conteudo .texto .titulo
+{
+	margin-bottom: 50px;
+}
+.quem_somos .conteudo .texto .descricao-visivel
+{
+	margin-bottom: 40px;
+}
+.quem_somos .conteudo .texto .btn
+{
+	margin: 0px;
+}
+.quem_somos .conteudo .video
+{
+	width: 100%%;
+	display: inline-block;
+
+}
+.quem_somos .conteudo .video a
+{
+	width: 100%;
+	padding-left: 25px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	overflow: hidden;
+}
+.quem_somos .conteudo .video a img
+{
+	width: 100%;
+  	display: block;
+}
+.quem_somos .conteudo .video a p
+{
+	position: absolute;
+  	left: 0;
+ 	padding: 70px 50px 70px 25px;
+  	background-color: var(--color-white);
+  	color: var(--color-black);
+  	max-width: calc(50% + 12px);
+  	text-transform: uppercase;
+  	font-size: 15px;
+}
+.quem_somos .conteudo .video a i
+{
+	padding: 30px;
+	font-size: 40px;
+	color: var(--color-destaque);
+	background-color: var(--color-white);
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	-webkit-box-shadow: 0px 0px 70px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 70px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 70px 0px rgba(0,0,0,0.75);
+	transition: var(--transition-hover);
+}
+.quem_somos .conteudo .video:hover > a i
+{
+	transform: scale(1.1);
+	-webkit-box-shadow: 0px 0px 19px 0px rgba(0,86,167,1);
+	-moz-box-shadow: 0px 0px 19px 0px rgba(0,86,167,1);
+	box-shadow: 0px 0px 19px 0px rgba(0,86,167,1);
+}
+@media only screen and (min-width: 1024px)
+{
+	.quem_somos
+	{
+		padding: 40px 0 50px 0;
+	}
+	.quem_somos .conteudo .texto
+	{
+		width: 39%;
+		margin-bottom: 0px;
+	}
+	.quem_somos .conteudo .video
+	{
+		width: 52%;
+	}
+	.quem_somos .conteudo .video a
+	{
+		height: 100%;
+	}
+	.quem_somos .conteudo .video a img
+	{
+		width: auto;
+	  	min-height: 100%;
+	  	min-width: 100%;
+	  	max-width: 100%;
+	  	max-height: 100%;
+	 	object-fit: cover;
+	 	left: 25px;
+		position: relative;
+	}
+
+}

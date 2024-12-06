@@ -1,0 +1,40 @@
+.servico
+{
+	width: 100%;
+	display: block;
+	padding: 50px 0;
+}
+.servico .conteudo
+{
+	width: 100%;
+	display: block;
+}
+.servico .conteudo .titulo
+{
+		font-size: 25px;
+}
+.servico .conteudo img
+{
+	width: 100%;
+	display: block;
+	margin-bottom: 50px;
+	border-radius: 8%;
+}
+@media only screen and	(min-width: 1024px)
+{
+	.servico
+	{
+	padding: 80px 0;
+    }
+	.servico .conteudo img
+	{
+		width: 46%;
+		margin-left: 50px;
+		margin-bottom: 30px;
+		float: right;
+	}
+	.servico .conteudo .descricao
+	{
+		margin-left: 20px;
+	}
+}

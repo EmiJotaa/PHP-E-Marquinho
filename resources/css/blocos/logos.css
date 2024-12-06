@@ -1,0 +1,59 @@
+.logos,
+.logos .conteudo,
+.logos .conteudo .itens,
+.logos .conteudo .itens .item a,
+.logos .conteudo .itens .item a img
+{
+	width: 100%;
+	display: block;
+}
+.logos
+{
+	background-image: url('../../imagens/fundo-clientes.png');
+	padding: 80px 0px;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.logos .conteudo .itens .item
+{
+	width: 100%;
+	display: inline-block;
+}
+.logos .conteudo .itens .item a img
+{
+	max-height: 150px;
+	width: auto;
+	max-width: 100%;
+	filter: grayscale(100%);
+	transition: .30s;
+}
+.logos .conteudo .itens .item:hover a img
+{
+	filter: grayscale(0%);
+}
+.logos .conteudo .itens .slick-arrow
+{
+	position: absolute;
+	z-index: 1;
+	top: calc(50% - 20px);
+	font-size: 30px;
+}
+.logos .conteudo .itens .slick-arrow i:before
+{
+	color: var(--color-white);
+	transition: var(--transition-hover);
+}
+.logos .conteudo .itens .slick-arrow:hover > i:before
+{
+	color: var(--color-hover);
+}
+.logos .conteudo .itens .slick-arrow.slick-prev
+{
+	left: 25px;
+
+}
+.logos .conteudo .itens .slick-arrow.slick-next
+{
+	right: 25px;
+}

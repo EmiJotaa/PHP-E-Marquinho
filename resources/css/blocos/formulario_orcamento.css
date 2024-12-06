@@ -1,0 +1,69 @@
+.formulario_orcamento
+{
+	width: 100%;
+	display: block;
+	padding: 60px 0;
+}
+.formulario_orcamento .conteudo
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.formulario_orcamento .conteudo .img
+{
+	display: none;
+}
+.formulario_orcamento .conteudo .form
+{
+	width: 100%;
+	display: block;
+	background-color: #292929;
+	padding: 25px;
+}
+.formulario_orcamento .conteudo .form .campo.botao
+{
+	margin-top: 20px;
+}
+.formulario_orcamento .conteudo .form p
+{
+	font-family: var(--font-family-bold);
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:1024px)
+{	
+	.formulario_orcamento .conteudo .img
+	{
+		display: block;
+		width: 37%;
+	}
+	.formulario_orcamento .conteudo .img img
+	{
+		width: auto;
+		max-width: 100%;
+	}
+	.formulario_orcamento .conteudo .form
+	{
+		width: 60%;
+	}
+	.formulario_orcamento .conteudo .form form .campo.nome,
+	.formulario_orcamento .conteudo .form form .campo.telefone
+	{
+		width: 49%;
+	}
+	.formulario_orcamento .conteudo .form form .campo.servicoss .itens .item
+	{
+		width: 28%;
+	}
+}

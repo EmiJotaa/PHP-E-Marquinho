@@ -1,0 +1,122 @@
+.painel-login{
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../../imagens/fundo_login.png);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.painel-login footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+.painel-login footer .copyright{
+	width: 100%;
+	display: block;
+
+}
+.painel-login footer .copyright .conteudo{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.painel-login footer .copyright .conteudo p{
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1024px){
+	.painel-login footer .copyright .conteudo{
+		justify-content: space-between;
+
+	}
+	.painel-login footer .copyright .conteudo p{
+		width: max-content;
+		max-width: 50%;
+
+	}
+}
+
+.painel-login .login{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.painel-login .login .container{
+	max-width: 400px;
+}
+.painel-login .login .container .conteudo{
+	width: 100%;
+	display: block;
+}
+.painel-login .login .container .conteudo .logo{
+	width: 100%;
+	display: block;
+}
+.painel-login .login .container .conteudo .logo a{
+	width: max-content;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+.painel-login .login .container .conteudo .logo a img{
+	width: auto;
+	max-width: 100%;
+	display: block;
+
+	margin: 0 auto;
+}
+.painel-login .login .container .conteudo form{
+	width: 100%;
+	display: block;
+	margin-top: 20px;
+	padding: 20px 25px;
+	background-color: #292929;
+	border-radius: 8%;
+	border: 1px solid var(--color-white);
+}
+.painel-login .login .container .conteudo form legend{
+	font-size: 22px;
+	font-family: var(--font-family-bold);
+	margin-bottom: 20px;
+
+}
+.painel-login .login .container .conteudo form .campo{
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+}
+.painel-login .login .container .conteudo form .campo input{
+	height: 50px;
+	line-height: 50px;
+}
+.painel-login .login .container .conteudo form .campo.botao{
+	margin-bottom: 0;
+}
+.painel-login .login .container .conteudo form .campo .btn{
+	width: 100%;
+	display: block;
+	background-color: var(--color-destaque);
+	text-transform: uppercase;
+	color: var(--color-white);
+	border: 0px;
+	border-radius: 0px;
+	height: 50px;
+	line-height: 50px;
+	padding: 0px;
+	cursor: pointer;
+}
+.painel-login .login .container .conteudo form .campo .btn:hover{
+	background-color: var(--color-hover);
+}

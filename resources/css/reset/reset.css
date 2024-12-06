@@ -1,0 +1,264 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+*,*:after,*:before{
+	box-sizing: border-box;
+}
+:root{
+	--color-white: #fff;
+	--color-black: #000;
+	--color-destaque: #0056a7;
+	--color-destaque-2: #80d3ff;
+	--color-hover: #80d3ff;
+	--transition-time: .5s;
+	--font-family: 'Montserrat Regular';
+	--font-family-light: 'Montserrat Light';
+	--font-family-semibold: 'Montserrat Semibold';
+	--font-family-bold: 'Montserrat Bold';
+}
+body {
+	line-height: 1.3;
+	background: var(--color-black);
+	color: var(--color-white);
+	font-family: var(--font-family);
+	font-size: 16px;
+}
+a{
+	color: var(--color-white);
+	font-family: var(--font-family);
+	font-size: 16px;
+	line-height: 1.3;
+	text-decoration: none;
+}	
+}
+ol, ul {
+	list-style: none;
+}
+ul, li {
+	list-style:none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container
+{
+	width: 100%;
+	max-width: 1410px;
+	padding: 0px 25px;
+	display: block;
+	margin: 0 auto;
+}
+.titulo
+{
+	font-size: 40px;
+	font-family: var(--font-family-semibold);
+	position: relative;
+	margin-bottom: 40px;
+}
+.titulo:after
+{
+	width: 100%;
+	max-width: 100px;
+	height: 5px;
+	background-color: var(--color-destaque);
+	content: ' ';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+}
+.titulo.center
+{
+	text-align: center;
+	width: max-content;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto 40px;
+}
+.titulo.center:after
+{
+	display: block;
+	margin: 0 auto;
+	right: 0;
+}
+.descricao
+{
+	width: 100%;
+	display: block;
+	margin-bottom: 25px;
+}
+.descricao p
+{
+	margin-bottom: 35px;
+}
+.descricao p:last-child
+{
+	margin-bottom: 0px;
+}
+.descricao-visivel p
+{
+	margin-bottom: 35px;
+}
+.descricao-visivel p:last-child
+{
+	margin-bottom: 0px;
+}
+.descricao.center
+{
+	text-align: center;
+}
+.btn
+{
+	width: max-content;
+	max-width: 100%;
+	text-align: center;
+	padding: 12px 28px;
+	border: 3px solid var(--color-destaque);
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-family: var(--font-family-semibold);
+	display: block;
+	margin: 0 auto;
+}
+.btn:hover
+{
+	background-color: var(--color-destaque);
+}
+@media only screen and (min-width: 1024px)
+{
+	.titulo{
+		font-size: 40px;
+	}
+}
+
+.form h2
+{
+	width: 100%;
+	display: block;
+	font-size: 24px;
+	margin-bottom: 18px;
+	line-height: 1;
+	font-family: var(--font-family-bold);
+}
+.form p
+{
+	width: 100%;
+	display: block;
+	font-size: 16px;
+	font-family: var(--font-family);
+	color: var(--color-white);
+	margin-bottom: 20px;
+}
+.form form
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.form form .campo
+{
+	width: 100%;
+	margin-bottom: 20px;
+	display: block;
+}
+input,select
+{
+	width: 100%;
+	display: block;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 15px;
+	font-size: 16px;
+	background-color: var(--color-white);
+	color: var(--color-black);
+	border: 0;
+	outline: none;
+}
+.form form .campo > label
+{
+	width: 100%;
+	display: block;
+	font-family: var(--font-family-bold);
+	margin-bottom: 10px;
+}
+.form form .campo .itens
+{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.form form .campo .itens .item
+{
+	width: 100%;
+	display: block;
+	margin-bottom: 15px;
+}
+.form form .campo .itens .item label
+{
+	width: 100%;
+	display: flex ;
+	align-items: flex-start;
+}
+.form form .campo .itens .item label input[type="checkbox"]
+{
+	width: 10%;
+	height: 10px;
+	margin-right: 5px;
+	border: 0;
+	outline: none;
+}
+textarea
+{
+	width: 100%;
+	display: block;
+	font-family: var(--font-family);
+	padding: 15px;
+	resize: none;
+	min-height: 110px;
+	max-height: 110px;
+	border: 0;
+	outline: none;
+}
+.form .btn
+{
+	background-color: transparent;
+	color: var(--color-white);
+}
+.form .btn:hover
+{
+	background-color: var(--color-destaque);
+}

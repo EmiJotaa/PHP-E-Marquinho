@@ -1,0 +1,40 @@
+.paginacao
+{
+	width: 100%;
+	display: block;
+	padding-bottom: 70px;
+	background-color: #292929;
+}
+.paginacao .conteudo
+{
+	width: 100%;
+	display: block;
+}
+.paginacao .conteudo ul
+{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.paginacao .conteudo ul li
+{
+	display: inline-block;
+}
+.paginacao .conteudo ul li a
+{
+	width: 40px;
+	height: 40px;
+	display: block;
+	border: 1px solid var(--color-white);
+	line-height: 40px;
+	text-align: center;
+	color: var(--color-white);
+}
+.paginacao .conteudo ul li.active a,
+.paginacao .conteudo ul li a:hover
+{
+	background-color: var(--color-destaque);
+	border-color: var(--color-destaque);
+}
